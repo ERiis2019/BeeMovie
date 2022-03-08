@@ -4,7 +4,7 @@
 <title>Bee Movie</title>
 </head>
 
-<body style="background-color:yellow;">
+<body style="background-color:yellow";>
 
 <h1 align= "center">Bee Movie</h1> 
 
