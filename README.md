@@ -1,25 +1,22 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>Bee Movie</title>
 </head>
 
-<body style="background-color:yellow";>
+<body style="background-color:yellow;">
 
 <h1 align= "center">Bee Movie</h1> 
 
 <style>
-.myDiv {
-  border: 5px outset darkblue;
+.myDiv {border: 5px outset darkblue;
   background-color: lightyellow;
-  text-align: center;
-}
+  text-align: center;}
 </style>
 </head>
 <body>
 
 
-<marquee direction="down" width="710" height="200" behavior="alternate" style="border:solid"bgcolor="whitesmoke">
+<marquee {direction="down";width="710" height="200";behavior="alternate"; style="border:solid";bgcolor="whitesmoke";}>
   <marquee behavior="alternate">
     <img width=150 src="https://png.pngitem.com/pimgs/s/261-2613348_bee-movie-png-gif-transparent-png.png">
   </marquee>
@@ -266,3 +263,4 @@ setInterval(smile, 4000);
 
 </body>
 </html>
+
