@@ -7,16 +7,8 @@
 
 <h1 align= "center">Bee Movie</h1> 
 
-<style>
-.myDiv {border: 5px outset darkblue;
-  background-color: lightyellow;
-  text-align: center;}
-</style>
-</head>
-<body>
 
-
-<marquee {direction="down";width="710" height="200";behavior="alternate"; style="border:solid";bgcolor="whitesmoke";}>
+<marquee direction="down" width="710" height="200" behavior="alternate" style="border:solid"bgcolor="whitesmoke">
   <marquee behavior="alternate">
     <img width=150 src="https://png.pngitem.com/pimgs/s/261-2613348_bee-movie-png-gif-transparent-png.png">
   </marquee>
@@ -92,6 +84,14 @@ an amusement park into our day.
 
 <p><h4 align="center"><q>Welcome, New Hive City graduating class of... 9:15.<br>That concludes our ceremonies. And begins your career
 at Honex Industries!</q></h4></p>
+
+<style>
+.myDiv {border: 5px outset darkblue;
+  background-color: lightyellow;
+  text-align: center;}
+</style>
+</head>
+<body>
 
 <div class="myDiv">
   <h2>Special Features!</h2>
