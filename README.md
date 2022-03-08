@@ -4,6 +4,8 @@
 <title>Bee Movie</title>
 </head>
 
+<body style="background-color:yellow;">
+
 <h1 align= "center">Bee Movie</h1> 
 
 <style>
@@ -23,15 +25,25 @@
   </marquee>
 </marquee>
 
+<label for="disk_c">Daily Pollen Level:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
 
+<label for="file">Honey Saved:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
 
-<br><button class="favorite styled"
+<br><p align="right"><button class="favorite styled"
         type="button">
     Ya Like Jazz?
 </button>
 
-<p align= "center">According to all known laws of aviation, there is no way a bee should be able to fly.
-<br>Its wings are too small to get its fat little body off the ground.<br>The bee, of course, flies anyway because bees don't care what humans think is impossible.<br>Yellow, black. Yellow, black. Yellow, black. Yellow, black.<br>Ooh, black and yellow! Let's shake it up a little.
+<figure>
+    <blockquote style="border:solid"width="600">
+        <p><b>According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible.
+    </blockquote>
+    <figcaption>—The Narrator, <cite>Bee Movie</cite></figcaption></b></p>
+</figure>
+
+<p align= "center"><br>Yellow, black. Yellow, black. Yellow, black. Yellow, black.<br>Ooh, black and yellow! Let's shake it up a little.
 <br>Barry! Breakfast is ready
 <br>Coming!
 <br>Hang on a second. Hello?
@@ -90,21 +102,36 @@ at Honex Industries!</q></h4></p>
 </div>
 
 <style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
+table, th, td {border: 1px solid black; border-collapse: collapse;}
+</style>
+</head>
+<body>
+<br></br>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  background-image: url("https://wallpapercave.com/wp/wp3287952.jpg");
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
 </style>
 </head>
 <body>
 
-<img src="https://wallpapercave.com/wp/wp3287952.jpg" width="400" height="200"><body style="background-color: #ffff00 ;"</h1>
+<div class="parallax"></div>
+
+<div style="height:100px;background-color:yellow">
 <a href="https://www.imdb.com/title/tt0389790/"><h3>Watch the Full Movie!</h3></a>
+</div>
 
 <form>
   <fieldset>
-    <legend>What combination is best?</legend>
-
+    <legend><h5>What combination is best?</h5></legend>
+    
     <input type="radio" id="kraken" name="monster">
     <label for="Yellow and Black">Yellow and Black</label><br/>
 
@@ -120,8 +147,15 @@ table, th, td {
 </form>
 <br></br>
 <table width = "100%">
-  <tr>
- <th>What Job is Best For You?</th>
+  <colgroup>
+    <col span="2" style="background-color:lightblue">
+    <col style="background-color:lightblue">
+  </colgroup>
+ 
+ <tr>
+ <th>What Job is Best For You</th>
+ <th>At Honex Industries?</th>
+ <th>Let's Find Out!</th>
   </tr>
   <tr>
     <td>Antenna Ball Polisher</td>
@@ -153,13 +187,82 @@ table, th, td {
   <td>Heating</td>
   </tr>
 </table>
+<br></br>
+
+<h2 align="center">Too loud for you?</h2>
+<h5 align="center">Watch the ASMR parody!</h5>
 
 <p align="center"><iframe width="50%"height="300" src="https://www.youtube.com/embed/WVcx29q3ey4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<caption>He-Man and Skeletor facts</caption>
+<br><caption>Line it up with the original movie to watch both!</caption>
+<br></br>
+  <h2 align="left">THE TRIAL</h2>
+<details>
+  <summary><h3>Those Called to the Stand</h3></summary>
+ <p>
+ <ul>
+  <li>Mr. Klauss Vanderhayen</li>
+  <li>Mr. Sting (aka Gordon M. Sumner)</li>
+  <li>Roy Loitta</li>
+  <li>Barry Benson</li>
+</ul>
+ </p>
+</details>
 
+<details>
+<summary><h3>The Defendant</h3></summary>
+Layton T. Montgomery
+</details>
+
+<details>
+  <summary><h3>The Prosecuter and Co.</h3></summary>
+ <ul>
+  <li>Barry Benson</li>
+  <li>Adam Flayman</li>
+  <li>Vanessa Bloome</li>
+</ul>
+</details>
+
+<details>
+	<summary><h3>Judge</h3></summary>
+    <p>Ms. Bumbleton</p>
+</details>
+<br></br>
+<menu>
+<h3>Who's Side Are You On?</h3>
+  <li><button onclick="copy()">Humans</button></li>
+  <li><button onclick="cut()">Bees</button></li>
+  <li><button onclick="paste()">Flowers</button></li>
+</menu>
+
+<style>
+#div1 {
+  font-size:48px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div id="div1" class="fa"></div>
+
+<script>
+function smile() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf118;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 1000);
+
+  setTimeout(function () {
+      a.innerHTML = "&#xf11a;";
+    }, 3000);
+}
+smile();
+setInterval(smile, 4000);
+</script>
+ 
 </div>
 
 </body>
 </html>
-
